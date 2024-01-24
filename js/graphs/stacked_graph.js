@@ -1,6 +1,6 @@
 // // Load bar data
 // Load bar data
-d3.csv('/data/bar_data.csv').then(function(data) {
+d3.csv('/university_enrollment_dv/data/bar_data.csv').then(function(data) {
     const width = 800;
     const height = 400;
 

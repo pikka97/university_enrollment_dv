@@ -1,4 +1,4 @@
-d3.csv('/data/education_data_choropleth.csv').then(function(data) {
+d3.csv('/university_enrollment_dv/data/education_data_choropleth.csv').then(function(data) {
     const width = 800;//1000;
     const height = 600;
   
