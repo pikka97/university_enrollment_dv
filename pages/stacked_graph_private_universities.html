@@ -23,7 +23,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" type='text/css'>
 
-    <title>Choropleth map</title>
+    <title>Private institutions over the years</title>
 </head>
 
 <body>
@@ -39,7 +39,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/index.html">
+            <a class="navbar-brand" href="/university_enrollment_dv/index.html">
                 <p>University Enrollment</p>
             </a>
         </div>
@@ -52,8 +52,8 @@
 
 <nav class="breadcrumb-pos" aria-label="breadcrumb">
     <ol class="breadcrumb font">
-        <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Choropleth map</li>
+        <li class="breadcrumb-item"><a href="/university_enrollment_dv/index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Private institutions over the years</li>
     </ol>
 </nav>
 
@@ -61,10 +61,23 @@
 <div class="container center">
 
     <section class="margin-title-section">
-        <h1 class="title center">The Choropleth map</h1>
+        <h1 class="title center">The count of the Universities<br>grouped by income group</h1>
         <hr>
         <h2 class="subtitle left">
-          In this page we show the distribution of the universities over the word map, coloring each country over the number of instituitions presented in the current country
+          In this page we show the number of the private universities groupped by region over the period 1950-2020.
+          <br><br>
+          It shows the Americas, Europe/Oceania, and Asia demonstrating consistent growth in private institutions,
+          while Africa exhibits a more gradual upward trend.
+          <br><br>
+          In particular:
+          <br><br>
+          <ul>
+            <li>Americas: The Americas exhibit a steady increase in private universities, with the number almost doubling from around 300 in 1950 to over 500 in 2020.</li>
+            <li>Europe/Oceania: Europe/Oceania displays a similar pattern of growth, with the number of private universities more than doubling from around 700 in 1950 to over 1,800 in 2020.</li>
+            <li>Asia: Asia also experiences significant growth in private universities, with the number increasing from around 600 in 1950 to over 2,500 in 2020.</li>
+            <li>Africa: In contrast to the other regions, Africa's growth is more gradual, with the number of private universities increasing from around 200 in 1950 to over 500 in 2020.</li>
+          </ul>
+          
         </h2>
         <hr>
     </section>
@@ -72,7 +85,7 @@
 
     <!-- ################################# ACCORDION #################################### -->
     <div class="row">
-        <div id="choropleth-map"></div>
+        <div id="stacked-bar-chart-num-private-universities"></div>
     </div>
     
     </div>
@@ -93,7 +106,7 @@
 <script src="/university_enrollment_dv/js/main.js"></script>
 <script src="https://d3js.org/d3.v5.min.js"></script>
 
-<script src="/university_enrollment_dv/js/graphs/chroplet_map.js"></script>
+<script src="/university_enrollment_dv/js/graphs/stacked_graph_private_universities_over_years.js"></script>
 
 </body>
 </html>
