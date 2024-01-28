@@ -1,6 +1,7 @@
 d3.csv('/university_enrollment_dv/data/education_data_choropleth.csv').then(function(data) {
+    const margin = { top: 40, right: 20, bottom: 30, left: 50 };
     const width = 800;//1000;
-    const height = 600;
+    const height = 800;
   
     const svg = d3.select('#choropleth-map')
       .append('svg')
@@ -36,7 +37,7 @@ d3.csv('/university_enrollment_dv/data/education_data_choropleth.csv').then(func
   
       // Add a legend
       const legend = svg.append("g")
-        .attr("transform", "translate(20,20)");
+        .attr("transform", "translate(50,100)");
   
       legend.selectAll("rect")
         .data(colorScale.ticks(6).map(d => colorScale(d)))
@@ -64,14 +65,24 @@ d3.csv('/university_enrollment_dv/data/education_data_choropleth.csv').then(func
             .duration(200)
             .style("opacity", .9);
           tooltip.html(event.id + "<br/>" + (dataMap.get(event.id) || 0) + " institutions")
-            .style("left", (d3.mouse(this)[0]) + "px")
-            .style("top", (d3.mouse(this)[1] + 150) + "px");
+            .style("left", (d3.mouse(this)[0] - 10) +  "px")
+            .style("top", (d3.mouse(this)[1] + 100) + "px");
         })
         .on("mouseout", function (d) {
           tooltip.transition()
             .duration(500)
             .style("opacity", 0);
         });
+
+    // Add a title
+    svg.append('text')
+      .text('The Institutions Distribution on the map')
+      .attr('x', (width / 2))
+      .attr('y', margin.top)
+      
+      .attr("text-anchor", "middle")
+      .style("font-size", "16px")
+
     });
   });
   

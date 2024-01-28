@@ -9,12 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"> <!-- Fira Sans & Roboto Slab fonts -->
 
-    <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -23,7 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" type='text/css'>
 
-    <title>UniversityEnrollment</title>
+    <title>University Enrollment</title>
 </head>
 
 <body>
@@ -65,7 +59,8 @@
             <h3 class="title left">What it is about:</h3><br>
             <div class="subtitle left">
                 Welcome! This is an <b>interactive website</b>  that show a few data visualizations on the <a
-                    href='//TODO'><b>University Enrollment dataset</b></a>.
+                    href='https://www.kaggle.com/datasets/ramazannuhbalayev/glued-institutional-data-from-orginal-source?select=enrollments_schema.csv' target="_blank">
+                    <b>University Enrollment dataset</b></a>.
                 <!-- showcases various data visualizations based on the University Enrollment dataset. -->
                 <br><br>
                 The message that <b>education is fundamental to everyone</b> is well-being and 
@@ -103,11 +98,11 @@
                             <div class="col-sm-11">
                                 <a role="button" data-parent="#accordion" data-toogle="collapse" href="#collapseOne1"
                                    class="colored_text" aria-expanded="true" aria-controls="collapseOne1">
-                                    A Choropleth map of the universities distributions over the world map
+                                    The data as geographical distributions 
                                 </a>
                             </div>
                             <div class="col-sm-1">
-                                <a class="colored_text" href="pages/choropleth_map">More <i
+                                <a class="colored_text" href="pages/data_geo_distributions.html">More <i
                                         class="fa-solid fa-arrow-right fa-xl colored_text"></i></a>
                             </div>
                         </div>
@@ -115,7 +110,7 @@
                 </div>
                 <div id="collapseOne1"  role="tabpanel" aria-labelledby="headingOne1">
                     <div class="panel-body">
-                        In this graph we show the universities distributions over a map of the word, coloring each country over the count of universities
+                        The data as geographical distributions
                     </div>
                 </div>
             </div>
@@ -131,11 +126,11 @@
                             <div class="col-sm-11">
                                 <a role="button" data-parent="#accordion" data-toogle="collapse" href="#collapseOne1"
                                    class="colored_text" aria-expanded="true" aria-controls="collapseOne1">
-                                    A stacked graph of the universities distributions over income groups
+                                    The data as economical distributions
                                 </a>
                             </div>
                             <div class="col-sm-1">
-                                <a class="colored_text" href="/university_enrollment_dv/pages/stacked_graph.html">More <i
+                                <a class="colored_text" href="/university_enrollment_dv/pages/data_eco_distributions.html">More <i
                                         class="fa-solid fa-arrow-right fa-xl colored_text"></i></a>
                             </div>
                         </div>
@@ -143,185 +138,48 @@
                 </div>
                 <div id="collapseOne1"  role="tabpanel" aria-labelledby="headingOne1">
                     <div class="panel-body">
-                        In this graph we show the universities distributions over a map of the word, coloring each country over the count of universities
+                        The data as economical distributions
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="section3" class="margin-section">
-        <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel-heading background-color" role="tab" id="headingOne1">
-                    <div class="panel-title">
-                        <div class="row">
-                            <div class="col-sm-11">
-                                <a role="button" data-parent="#accordion" data-toogle="collapse" href="#collapseOne1"
-                                   class="colored_text" aria-expanded="true" aria-controls="collapseOne1">
-                                    A stacked graph of the number of private istitutions over the years 1950-2020
-                                </a>
-                            </div>
-                            <div class="col-sm-1">
-                                <a class="colored_text" href="/university_enrollment_dv/pages/stacked_graph_private_universities.html">More <i
-                                        class="fa-solid fa-arrow-right fa-xl colored_text"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="collapseOne1"  role="tabpanel" aria-labelledby="headingOne1">
-                    <div class="panel-body">
-                        In this graph we show the universities distributions over a map of the word, coloring each country over the count of universities
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- <div id="section1" class="margin-section">
-        <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel-heading background-color" role="tab" id="headingOne1">
-                    <div class="panel-title">
-                        <div class="row">
-                            <div class="col-sm-11">
-                                <a role="button" data-parent="#accordion" data-toogle="collapse" href="#collapseOne1"
-                                   class="colored_text" aria-expanded="true" aria-controls="collapseOne1">
-                                    Assignment #1: Comparing Categories
-                                </a>
-                            </div>
-                            <div class="col-sm-1">
-                                <a class="colored_text" href="assignments/1/comparison.html">More <i
-                                        class="fa-solid fa-arrow-right fa-xl colored_text"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="collapseOne1"  role="tabpanel" aria-labelledby="headingOne1">
-                    <div class="panel-body">
-                        In this assignment we compare tree species abundance. Click on the right arrow to visualize it.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="section2" class="margin-section">
-        <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel-heading background-color" role="tab" id="headingOne2">
-                    <div class="panel-title">
-                        <div class="row">
-                            <div class="col-sm-11">
-                                <a role="button" data-parent="#accordion2" data-toogle="collapse" href="#collapseOne2"
-                                   class="colored_text" aria-expanded="true" aria-controls="collapseOne2">
-                                    Assignment #2: Distribution and Correlation
-                                </a>
-                            </div>
-                            <div class="col-sm-1">
-                                <a class="colored_text" href="assignments/2/distribution.html">More <i
-                                        class="fa-solid fa-arrow-right fa-xl colored_text"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="collapseOne2"  role="tabpanel" aria-labelledby="headingOne2">
-                    <div class="panel-body">
-                        In this assignment we show distribution and correlation between different types of trees. Click on the right arrow to visualize it.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="section3" class="margin-section">
-        <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel-heading background-color" role="tab" id="headingOne3">
-                    <div class="panel-title">
-                        <div class="row">
-                            <div class="col-sm-11">
-                                <a role="button" data-parent="#accordion3" data-toogle="collapse" href="#collapseOne3"
-                                   class="colored_text" aria-expanded="true" aria-controls="collapseOne3">
-                                    Assignment #3: Maps
-                                </a>
-                            </div>
-                            <div class="col-sm-1">
-                                <a class="colored_text" href="assignments/3/maps.html">More <i
-                                        class="fa-solid fa-arrow-right fa-xl colored_text"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="collapseOne3"  role="tabpanel" aria-labelledby="headingOne3">
-                    <div class="panel-body">
-                        In this assignment we show some datas per neighborhood in maps. Click on the right arrow to visualize it.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div id="section4" class="margin-section">
-        <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+        <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
-                <div class="panel-heading background-color" role="tab" id="headingOne3">
+                <div class="panel-heading background-color" role="tab" id="headingOne1">
                     <div class="panel-title">
                         <div class="row">
                             <div class="col-sm-11">
-                                <a role="button" data-parent="#accordion3" data-toogle="collapse" href="#collapseOne3"
-                                   class="colored_text" aria-expanded="true" aria-controls="collapseOne3">
-                                    Assignment #4: Timelines
+                                <a role="button" data-parent="#accordion" data-toogle="collapse" href="#collapseOne1"
+                                   class="colored_text" aria-expanded="true" aria-controls="collapseOne1">
+                                    The public and private institutions and the closures in the time
                                 </a>
                             </div>
                             <div class="col-sm-1">
-                                <a class="colored_text" href="assignments/4/timelines.html">More <i
+                                <a class="colored_text" href="/university_enrollment_dv/pages/private_public_institutions.html">More <i
                                         class="fa-solid fa-arrow-right fa-xl colored_text"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="collapseOne3"  role="tabpanel" aria-labelledby="headingOne3">
+                <div id="collapseOne1"  role="tabpanel" aria-labelledby="headingOne1">
                     <div class="panel-body">
-                        In this assignment we will employ daily temperature time series. Click on the right arrow to visualize it.
+                        In this graph we show the universities distributions over a map of the word, coloring each country over the count of universities
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="section5" class="margin-section">
-        <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel-heading background-color" role="tab" id="headingOne3">
-                    <div class="panel-title">
-                        <div class="row">
-                            <div class="col-sm-11">
-                                <a role="button" data-parent="#accordion3" data-toogle="collapse" href="#collapseOne3"
-                                   class="colored_text" aria-expanded="true" aria-controls="collapseOne3">
-                                    Assignment #5: Flux
-                                </a>
-                            </div>
-                            <div class="col-sm-1">
-                                <a class="colored_text" href="assignments/5/flux.html">More <i
-                                        class="fa-solid fa-arrow-right fa-xl colored_text"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="collapseOne3"  role="tabpanel" aria-labelledby="headingOne3">
-                    <div class="panel-body">
-                        In this assignment we will show (through Sankey Alluvial diagram) the flux of the top 10 species of trees. Click on the right arrow to visualize it.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
 
 </div> <!-- chiude container -->
 
 <!-- ################################# FOOTER #################################### -->
 <footer class="text-center text-lg-start">
     <div class="footer-top-space text-center p-3 background-color colored_text">
-        © 2022 Copyright:
-        <a class="text-dark colored_text" href="https://github.com/pikka97/university_enrollment_dv">IncApacheSpark Github</a>
+        © 2024 Copyright:
+        <a class="text-dark colored_text" href="https://github.com/pikka97/university_enrollment_dv">Github</a>
     </div>
 </footer>
 

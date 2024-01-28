@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"> <!-- Fira Sans & Roboto Slab fonts -->
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="/university_enrollment_dv/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" type='text/css'>
+
+    <title>Data GeoDistributions</title>
+</head>
+
+<body>
+
+<!-- ################################# NAVBAR #################################### -->
+<nav class="navbar navbar-default background-color navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed colored_text" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/university_enrollment_dv/index.html">
+                <p>University Enrollment</p>
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right"></ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</nav>
+
+<nav class="breadcrumb-pos" aria-label="breadcrumb">
+    <ol class="breadcrumb font">
+        <li class="breadcrumb-item"><a href="/university_enrollment_dv/index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Data GeoDistributions</li>
+    </ol>
+</nav>
+
+<!-- ################################# CONTAINER #################################### -->
+<div class="container center">
+
+    <section class="margin-title-section">
+        <h1 class="title center">The Data GeoDistributions</h1>
+        <hr>
+        <h2 class="subtitle left">
+          In this page we analyze the Universities Enrollment dataset as different geographical distributions, focusing on the differences between the countries and regions.
+        </h2>
+        <hr>
+    </section>
+
+
+    <!-- ################################# ACCORDION #################################### -->
+    
+    <div class="row">
+        <div id="choropleth-map"></div>
+          <p>The vibrant hues displayed across the map unveil the global distribution of universities, revealing the concentration of institutions in various countries. The intensity of color corresponds to the number of universities present in each nation.</p>
+          <p>A striking observation emerges: North America and Europe stand as the strongholds of higher education, boasting the highest density of universities worldwide. This dominance stems from the deep-rooted tradition of academic excellence in these regions and their unwavering commitment to research and innovation.</p>
+          <p>While the Asia Pacific (APAC) region has traditionally focused on technical and vocational education, it is witnessing a remarkable surge in university presence. Nations like China, India, and South Korea are experiencing a proliferation of higher education institutions, mirroring their rapid economic growth and technological advancements.</p>
+          <p>However, Latin America (LATAM) and the Middle East and North Africa (MENA) regions lag behind in terms of university density compared to North America, Europe, and APAC. This disparity could be attributed to various factors, including historical educational inequities, economic constraints, and varying priorities in higher education development.</p>
+          <p>The map also highlights variations in institutional size across different countries. While some regions, especially North America and Europe, exhibit a higher proportion of larger universities, others like LATAM and Africa tend to have a greater concentration of smaller, less established institutions.</p>
+          <p>The uneven distribution of universities raises crucial concerns about access to higher education for students in areas with fewer institutions. Address this imbalance requires targeted initiatives to enhance educational opportunities in underserved communities.</p>
+          <p>While the sheer number of universities is a significant factor, it's equally important to consider the quality and research focus of these institutions. Fostering world-class universities across all regions is paramount for driving innovation and economic development.</p>
+          <p>Government policies and investments play a pivotal role in shaping the higher education landscape. By investing in higher education infrastructure, providing financial support to universities, and implementing effective policies, governments can nurture a more equitable and globally competitive education system.</p>
+          <p>In essence, the map's representation of university distribution paints a vivid picture of the diverse landscape of higher education worldwide. While North America and Europe hold the forefront in institutional presence, emerging regions like APAC are rapidly gaining prominence. Addressing disparities in access, quality, and research focus necessitates concerted efforts from governments, educational institutions, and international organizations to ensure that higher education remains a driving force behind global progress and social equity.</p>
+        
+        <br>
+        <br>
+        
+        <div id="bar-chart-private-public-by-regions"></div>
+        <p>The vibrant hues displayed across this map unveil the global distribution of private universities, revealing the concentration of these institutions across continents. The intensity of color corresponds to the number of private universities present in each region.</p>
+
+        <p>A striking observation emerges: North America and Europe stand as the strongholds of private higher education, boasting the highest density of private universities worldwide. This dominance stems from the deep-rooted tradition of private education in these regions and their unwavering commitment to entrepreneurial pursuits and personalized learning approaches.</p>
+
+        <p>While the Asia Pacific (APAC) region has traditionally focused on public higher education, it is witnessing a remarkable surge in private university presence. Nations like China, India, and South Korea are experiencing a proliferation of private higher education institutions, mirroring their rapid economic growth and entrepreneurial spirit.</p>
+
+        <p>However, Latin America (LATAM) and Sub-Saharan Africa (SSA) lag behind in terms of private university density compared to North America, Europe, and APAC. This disparity could be attributed to various factors, including historical educational disparities, regulatory constraints, and differing priorities in higher education development.</p>
+
+        <p>The map also highlights variations in private university size across different regions. While some regions, especially North America and Europe, exhibit a higher proportion of larger private universities, others like LATAM and SSA tend to have a greater concentration of smaller, less established institutions.</p>
+
+        <p>The uneven distribution of private universities raises crucial concerns about access to private higher education for students in regions with fewer institutions. Addressing this imbalance requires targeted initiatives to enhance educational opportunities in underserved communities.</p>
+
+        <p>While the sheer number of private universities is a significant factor, it's equally important to consider the quality, research focus, and innovation capacity of these institutions. Fostering world-class private universities across all regions is paramount for driving economic competitiveness and societal progress.</p>
+
+        <p>Government policies and investments play a pivotal role in shaping the private higher education landscape. By providing regulatory frameworks that support private sector participation, investing in private university infrastructure, and implementing effective policies, governments can foster a more equitable and globally competitive education system.</p>
+
+        <p>In essence, the map's representation of private university distribution paints a vivid picture of the diverse landscape of private higher education worldwide. While North America and Europe hold the forefront in institutional presence, emerging regions like APAC are rapidly gaining prominence. Addressing disparities in access, quality, and innovation capacity necessitates concerted efforts from governments, educational institutions, and international organizations to ensure that private higher education remains a driving force behind global progress and social equity.</p>
+    </div>
+
+        
+        <!-- <br>
+        <br>
+
+        <div id="stacked-bar-chart"></div> -->
+
+    </div>
+    
+    </div>
+
+</div> <!-- chiude container -->
+
+<!-- ################################# FOOTER #################################### -->
+<footer class="text-center text-lg-start">
+    <div class="footer-top-space text-center p-3 background-color colored_text">
+        © 2024 Copyright:
+        <a class="text-dark colored_text" href="https://github.com/pikka97/university_enrollment_dv">Github</a>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.5/dist/js/bootstrap.min.js"></script>
+<script src="/university_enrollment_dv/js/main.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<script src="/university_enrollment_dv/js/graphs/chroplet_map.js"></script>
+<script src="/university_enrollment_dv/js/graphs/bar_chart_num_students_over_years_by_regions.js"></script>
+<!-- <script src="/university_enrollment_dv/js/graphs/stacked_graph.js"></script> -->
+
+</body>
+</html>
