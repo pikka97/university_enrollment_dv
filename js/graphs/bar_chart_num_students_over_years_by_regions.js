@@ -1,7 +1,7 @@
 // Load data from CSV file
 d3.csv('/university_enrollment_dv/data/num_students_over_years_by_region.csv').then(function(data) {
     // Set up the chart dimensions
-    const margin = { top: 40, right: 20, bottom: 30, left: 50 };
+    const margin = { top: 40, right: 20, bottom: 30, left: 100 };
     const width = 800 - margin.left - margin.right;
     const height = 400 - margin.top - margin.bottom;
 
